@@ -287,7 +287,7 @@ function initMap() {
       var centroid = calculateCentroid(coords);
 
       var carIcon = L.icon({
-        iconUrl: 'img/coche.png',
+        iconUrl: 'ParkFinder/img/coche.png',
         iconSize: [40, 40],
         iconAnchor: [20, 20]
       });
