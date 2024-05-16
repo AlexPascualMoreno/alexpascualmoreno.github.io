@@ -271,6 +271,7 @@ function initMap() {
 
     areas.forEach(function (coords) {
       var probability = getRandomProbability(0, 100);
+      var probabilityPark = getRandomProbability(0,1.20);
 
       var color;
       if (probability <= 10) {
@@ -313,11 +314,11 @@ function initMap() {
       marker.on('click', function (e) {
 
         if (!popupOpen) {
-          marker.bindPopup("Probabilidad de aparcar: " + probability.toFixed(2) + "%", {
-            className: 'custom-popup'
+          marker.bindPopup("Probabilidad de aparcar: " + probability.toFixed(2) + "%"+ "<br>" +
+          "Precio estimado: " + probabilityPark.toFixed(2) + "€/h", {
           }).openPopup();
 
-          marker._popup._container.classList.add('show');
+          
           popupOpen = true;
         } else {
           marker.closePopup();

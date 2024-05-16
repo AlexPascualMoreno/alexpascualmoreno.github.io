@@ -1,31 +1,60 @@
-body,
-        html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-
-        #map {
-            height: 100%;
-            width: 100%;
-        }
-
-        .custom-popup {
-          background-color: rgb(6, 145, 237); /* Azul */
-          color: white; /* Texto blanco */
-          border: 3px solid #ffffff;
-          border-radius: 10px;
-          padding: 10px;
-          font-family: Arial, sans-serif;
-          font-size: 14px;
-          opacity: 0; /* Inicialmente oculto */
-          transform: scale(0.5); /* Reducir el tamaño a la mitad */
-          transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out; /* Transición suave de opacidad y transformación */
-      }
-      
-
-/* Mostrar el popup al agregar la clase "show" */
-.custom-popup.show {
-    opacity: 1;
+:root {
+    --bs-light-rgb: 248, 249, 250;
+    --bs-bg-opacity: 0.85;
 }
 
+
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar{
+    display: none;
+}
+    
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: rgba(7, 167, 247, 0.524);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header * {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.leaflet-popup-close-button {
+    display: none;
+}
+
+.leaflet-popup-content-wrapper {
+    color: rgba(0, 0, 0, 1) !important;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.leaflet-popup-content {
+    color: rgba(0, 0, 0, 1) !important;
+
+}
+
+.leaflet-popup-tip {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.leaflet-bar{
+    display: none;
+}
