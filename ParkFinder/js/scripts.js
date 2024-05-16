@@ -1,13 +1,13 @@
 
 function initMap() {
 
- var map = L.map('map').setView([36.71, -4.42], 13); 
+  var map = L.map('map').setView([36.71, -4.42], 13);
 
- L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
- }).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+  }).addTo(map);
 
- map.setZoom(14.4); 
+  map.setZoom(14.4);
 
   var areas = [
     [
@@ -241,6 +241,20 @@ function initMap() {
       [-4.408854, 36.723084],
       [-4.408726, 36.723282],
       [-4.409128, 36.723329]
+    ],
+    [
+      [-4.428079, 36.709539],
+      [-4.430826, 36.706477],
+      [-4.434044, 36.708816],
+      [-4.435074, 36.708025],
+      [-4.438357, 36.711052],
+      [-4.434795, 36.712618],
+      [-4.434366, 36.713323],
+      [-4.433293, 36.713375],
+      [-4.432328, 36.713736],
+      [-4.43074, 36.711603],
+      [-4.430182, 36.711052],
+      [-4.428079, 36.709539]
     ]
   ];
 
